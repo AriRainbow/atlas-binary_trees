@@ -17,7 +17,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	binary_tree_t *new_node;
 
 	if (next_node_index >= MAX_NODES)
-		return (NULL);
+		return (NULL); /* no space available */
 
 	new_node = &nodes[next_node_index++];
 
