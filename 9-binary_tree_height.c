@@ -19,6 +19,6 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	/* Measure height of right subtree */
 	right_height = binary_tree_height(tree->right);
 
-	/* height of tree is the greater of 2 subtree heights +1 for root */
-	return ((left_height > right_height ? left_height : right_height) + 1);
+	/* height of tree is the greater of 2 subtree heights */
+	return ((left_height > right_height ? left_height : right_height));
 }
