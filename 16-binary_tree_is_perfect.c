@@ -51,6 +51,7 @@ int is_perfect_recursive(const binary_tree_t *tree, size_t d, size_t level)
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	size_t d;
+
 	if (tree == NULL)
 		return (0);
 
